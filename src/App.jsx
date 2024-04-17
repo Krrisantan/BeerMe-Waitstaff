@@ -26,14 +26,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <section>
-        <table>
-          <thead>
-            <tr>
+    <div className="waitstaff">
+      <section className="waitstaff__section">
+        <table className="waitstaff__table">
+          <thead className="waitstaff__table-head">
+            <tr className="waitstaff__table-head--row">
               <th>Table #</th>
               <th>Name</th>
-              <th>Quantity</th>
+              {/* <th>Quantity</th> */}
               <th>Actions</th>
             </tr>
           </thead>
@@ -42,11 +42,11 @@ function App() {
               return (
                 <tr key={key}>
                   <td>{currentOrder.table_number}</td>
-                  <td>{currentOrder.name}</td>
-                  <td>{currentOrder.quantity}</td>
+                  <td className="waitstaff__table-name">{currentOrder.name}</td>
+                  {/* <td>{currentOrder.quantity}</td> */}
                   <td>
                     <button
-                      className="remove"
+                      className="waitstaff__remove-button"
                       onClick={() => removeOrderHandler(currentOrder)}
                     >
                       Remove Order

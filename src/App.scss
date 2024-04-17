@@ -1,62 +1,84 @@
-.App {
+.waitstaff {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-html{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(2rem + 2vmin);
+  &__section {
+    display: flex;
+  }
+  &__table {
+    background-color: white;
+    color: black;
+    border: 3px solid forestgreen; 
+    padding: 3rem;
 }
 
-table {
-  background-color: white;
-  color: black;
-  border: 2px solid forestgreen;
-  width: 800px;
-  height: 200px;
+&__table-head--row {
+  text-decoration: underline;
+}
+&__table-name {
+  color: red;
+  padding: 0 40px;
+}
+&__remove-button {
+  font-size: 2rem;
+}
+// border-collapse: collapse;
 }
 
-th {
-  border-bottom: 1px solid black;
-}
 
-td {
-  text-align: center;
-}
 
-img {
-  width: 10rem;
-}
+// .waitstaff__table-name {
+// }
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: cadetblue;
-  margin: 2rem;
-  font-size: large;
-  flex-direction: column;
-}
 
-input {
-  margin: 1rem;
-  font-size: xx-large;
-  line-height: 2rem;
-  width: 80%;
-}
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// html{
+  
+// }
+
+
+// th {
+//   border-bottom: 1px solid black;
+// }
+
+// td {
+//   text-align: center;
+// }
+
+
+
+// img {
+//   width: 10rem;
+// }
+
+// form {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: cadetblue;
+//   margin: 2rem;
+//   font-size: large;
+//   flex-direction: column;
+// }
+
+// input {
+//   margin: 1rem;
+//   font-size: xx-large;
+//   line-height: 2rem;
+//   width: 80%;
+// }
