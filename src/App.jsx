@@ -7,7 +7,9 @@ function App() {
   useEffect(() => {
     const getNewOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:8888/ordersRoutes");
+        const response = await axios.get(
+          "https://beerme-4e548aac6e70.herokuapp.com/ordersRoutes"
+        );
         // const response = await axios.get("http://localhost:8888/ordersRoutes");
 
         const newOrdersData = response.data;
@@ -22,7 +24,7 @@ function App() {
   const removeOrderHandler = async (currentOrder) => {
     console.log(currentOrder);
     console.log("order should be removed");
-    const deleteOrderUrl = `http://localhost:8888/ordersRoutes/orders/${currentOrder.id}`;
+    const deleteOrderUrl = `https://beerme-4e548aac6e70.herokuapp.com/ordersRoutes/orders/${currentOrder.id}`;
     console.log(deleteOrderUrl);
     const response = await axios.delete(deleteOrderUrl);
   };
