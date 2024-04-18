@@ -8,6 +8,8 @@ function App() {
     const getNewOrders = async () => {
       try {
         const response = await axios.get("http://localhost:8888/ordersRoutes");
+        // const response = await axios.get("http://localhost:8888/ordersRoutes");
+
         const newOrdersData = response.data;
         setNewOrders(newOrdersData);
       } catch (error) {
